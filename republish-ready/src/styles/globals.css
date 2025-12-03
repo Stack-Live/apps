@@ -1,0 +1,68 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-colors-accent: #b2ddd0;
+  --brand-colors-background: #ffffff;
+  --brand-colors-error: #f13300;
+  --brand-colors-primary: rgb(0, 74, 173);
+  --brand-colors-secondary: rgb(208, 81, 49);
+  --brand-colors-success: #92, 172, 60;
+  --brand-colors-surface: #f3f3f3;
+  --brand-colors-text-muted: grey;
+  --brand-colors-text-onPrimary: #ffffff;
+  --brand-colors-text-primary: #232323;
+  --brand-colors-text-secondary: #404040;
+  --brand-colors-warning: #edcf2f;
+  --brand-logo-url: https://assets.crowdblue.com/v2/production/all/img/crowdblue-logo-white.png;
+  --brand-name: CrowdBlue;
+  --brand-radius-default: 4px;
+  --brand-radius-full: 100%;
+  --brand-radius-lg: 8px;
+  --brand-shadows-default: rgba(0, 0, 0, 0.1) 0px 4px 4px 0px;
+  --brand-shadows-lg: rgba(0, 0, 0, 0.3) 0px 2px 3px 0px;
+  --brand-shadows-md: rgba(0, 0, 0, 0.2) 0px 8px 16px 0px;
+  --brand-spacing-4: 1rem;
+  --brand-spacing-8: 2rem;
+  --brand-tagline: The Blue Wave Starts Here - Campaign. Organize. Take Action.;
+  --brand-typography-fontFamily-body: "lucida grande", tahoma, verdana, arial, sans-serif;
+  --brand-typography-fontFamily-heading: "Proxima-Nova", Helvetica, sans-serif;
+  --brand-typography-fontSize-2xl: 30px;
+  --brand-typography-fontSize-base: 16px;
+  --brand-typography-fontSize-lg: 18px;
+  --brand-typography-fontSize-sm: 13px;
+  --brand-typography-fontSize-xl: 24px;
+  --brand-typography-fontSize-xs: 11px;
+  --brand-voice-examples-cta: Take a tour;
+  --brand-voice-examples-headline: The Drumbeat of Defiance;
+  --brand-voice-personality: Activist;
+  --brand-voice-tone: Empowering;
+
+}
+
+body {
+  background-color: var(--brand-colors-background);
+  color: var(--brand-colors-text-primary);
+  font-family: var(--brand-typography-fontFamily-body);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--brand-typography-fontFamily-heading);
+}
+
+/* Overriding Tailwind classes with brand colors */
+.bg-white { background-color: var(--brand-colors-surface) !important; }
+.text-gray-900 { color: var(--brand-colors-text-primary) !important; }
+.text-gray-800 { color: var(--brand-colors-text-primary) !important; }
+.text-gray-700 { color: var(--brand-colors-text-secondary) !important; }
+.text-gray-600 { color: var(--brand-colors-text-secondary) !important; }
+.text-gray-500 { color: var(--brand-colors-text-secondary) !important; }
+.text-gray-400 { color: var(--brand-colors-text-muted) !important; }
+.bg-indigo-600 { background-color: var(--brand-colors-primary) !important; }
+.hover\:bg-indigo-700:hover { background-color: var(--brand-colors-primary-hover) !important; }
+.text-indigo-600 { color: var(--brand-colors-primary) !important; }
+.hover\:text-indigo-600:hover { color: var(--brand-colors-primary) !important; }
+.border-gray-200 { border-color: var(--brand-colors-border) !important; }
+    
