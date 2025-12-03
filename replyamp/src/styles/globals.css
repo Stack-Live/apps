@@ -1,0 +1,68 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-colors-accent: rgb(249, 186, 18);
+  --brand-colors-background: rgb(255, 255, 255);
+  --brand-colors-error: rgb(236, 70, 55);
+  --brand-colors-primary: rgb(0, 114, 245);
+  --brand-colors-secondary: rgb(244, 164, 164);
+  --brand-colors-success: rgb(0, 206, 107);
+  --brand-colors-surface: rgb(250, 250, 250);
+  --brand-colors-text-muted: rgb(206, 206, 206);
+  --brand-colors-text-onPrimary: rgb(255, 255, 255);
+  --brand-colors-text-primary: rgb(23, 23, 23);
+  --brand-colors-text-secondary: rgb(148, 149, 149);
+  --brand-colors-warning: rgb(249, 186, 18);
+  --brand-logo-url: ;
+  --brand-name: Login – Vercel;
+  --brand-radius-default: 6px;
+  --brand-radius-full: 9999px;
+  --brand-radius-lg: 8px;
+  --brand-shadows-default: rgba(0, 0, 0, 0.08) 0px 0px 0px 1px, rgb(250, 250, 250) 0px 0px 0px 1px;
+  --brand-shadows-lg: 0 0 0 1px var(--geist-background),0 0 0 3px var(--button-custom-bg-hover,var(--button-custom-bg,var(--geist-foreground)));
+  --brand-shadows-md: rgba(0, 0, 0, 0.34) 0px 0px 0px 1px, rgba(0, 0, 0, 0.16) 0px 0px 0px 4px;
+  --brand-spacing-4: 1rem;
+  --brand-spacing-8: 2rem;
+  --brand-tagline: Sign in to v0 using your Vercel account.;
+  --brand-typography-fontFamily-body: Geist, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji;
+  --brand-typography-fontFamily-heading: Geist Mono", ui-monospace, SFMono-Regular, "Roboto Mono", Menlo, Monaco, "Liberation Mono", "DejaVu Sans Mono", "Courier New", monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol;
+  --brand-typography-fontSize-2xl: 3rem;
+  --brand-typography-fontSize-base: 16px;
+  --brand-typography-fontSize-lg: 24px;
+  --brand-typography-fontSize-sm: 14px;
+  --brand-typography-fontSize-xl: 32px;
+  --brand-typography-fontSize-xs: 12px;
+  --brand-voice-examples-cta: Continue with Email;
+  --brand-voice-examples-headline: Sign in to v0;
+  --brand-voice-personality: Secure and Trustworthy;
+  --brand-voice-tone: Professional;
+
+}
+
+body {
+  background-color: var(--brand-colors-background);
+  color: var(--brand-colors-text-primary);
+  font-family: var(--brand-typography-fontFamily-body);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--brand-typography-fontFamily-heading);
+}
+
+/* Overriding Tailwind classes with brand colors */
+.bg-white { background-color: var(--brand-colors-surface) !important; }
+.text-gray-900 { color: var(--brand-colors-text-primary) !important; }
+.text-gray-800 { color: var(--brand-colors-text-primary) !important; }
+.text-gray-700 { color: var(--brand-colors-text-secondary) !important; }
+.text-gray-600 { color: var(--brand-colors-text-secondary) !important; }
+.text-gray-500 { color: var(--brand-colors-text-secondary) !important; }
+.text-gray-400 { color: var(--brand-colors-text-muted) !important; }
+.bg-indigo-600 { background-color: var(--brand-colors-primary) !important; }
+.hover\:bg-indigo-700:hover { background-color: var(--brand-colors-primary-hover) !important; }
+.text-indigo-600 { color: var(--brand-colors-primary) !important; }
+.hover\:text-indigo-600:hover { color: var(--brand-colors-primary) !important; }
+.border-gray-200 { border-color: var(--brand-colors-border) !important; }
+    
