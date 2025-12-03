@@ -1,0 +1,50 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Default brand variables */
+  --brand-colors-primary: #4f46e5;
+  --brand-colors-primary-hover: #4338ca;
+  --brand-colors-background: #f9fafb;
+  --brand-colors-surface: #ffffff;
+  --brand-colors-surface-alt: #f3f4f6;
+  --brand-colors-border: #e5e7eb;
+  --brand-colors-text-primary: #111827;
+  --brand-colors-text-secondary: #6b7280;
+  --brand-colors-text-muted: #9ca3af;
+  --brand-colors-text-on-primary: #ffffff;
+  --brand-colors-success: #22c55e;
+  --brand-colors-error: #ef4444;
+  --brand-colors-warning: #f59e0b;
+  --brand-colors-info: #3b82f6;
+  --brand-typography-fontFamily-body: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --brand-typography-fontFamily-heading: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
+
+body {
+  background-color: var(--brand-colors-background);
+  color: var(--brand-colors-text-primary);
+  font-family: var(--brand-typography-fontFamily-body);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--brand-typography-fontFamily-heading);
+}
+
+/* Overriding Tailwind classes with brand colors */
+.bg-white { background-color: var(--brand-colors-surface) !important; }
+.text-gray-900 { color: var(--brand-colors-text-primary) !important; }
+.text-gray-800 { color: var(--brand-colors-text-primary) !important; }
+.text-gray-700 { color: var(--brand-colors-text-secondary) !important; }
+.text-gray-600 { color: var(--brand-colors-text-secondary) !important; }
+.text-gray-500 { color: var(--brand-colors-text-secondary) !important; }
+.text-gray-400 { color: var(--brand-colors-text-muted) !important; }
+.bg-indigo-600 { background-color: var(--brand-colors-primary) !important; }
+.hover\:bg-indigo-700:hover { background-color: var(--brand-colors-primary-hover) !important; }
+.text-indigo-600 { color: var(--brand-colors-primary) !important; }
+.hover\:text-indigo-600:hover { color: var(--brand-colors-primary) !important; }
+.border-gray-200 { border-color: var(--brand-colors-border) !important; }
+    
